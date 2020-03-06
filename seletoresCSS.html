@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* pseudoelemento */
+     button:hover{background-color: brown;} /*HOVER quando passar o mouse em cima faz a ação*/
+
+    li{color: darkblue;}
+    li:first-child {color: green;}
+    li:last-child {color: darkred;}
+    li:nth-child(3){color: orangered;}
+
+    p:first-child i {background-color: rgb(144, 224, 69);}
+    input[type="password"]{color: palevioletred;}
+    input[type="submit"]{border-radius: 5px 5px; color: yellow; background-color: black;}
+    input[type="submit"]:active{background-color: white;} /* ACTIVE quan clicar com mouse ele faz a ação*/
+
+
+    
+
+</style>
+
+<body>
+    
+    <button>Clique aqui</button>
+    <br>
+    <br>
+    <br>
+
+    <button>Clique aqui</button>
+
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+
+    </ul>
+
+    <div>
+        <p>
+        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt</i> repudiandae ea ad veniam quibusdam voluptatibus minus perferendis nostrum. Sequi, eum quaerat. Sint, veritatis adipisci ea aut quia a aspernatur.
+        </p>
+        <p>Lorem ipsum <i>dolor sit, amet consectetur adipisicing elit. Aperiam inventore labore natus quia totam recusandae, ut blanditiis unde delectus soluta</i> animi eaque vel a aspernatur magnam ullam odio similique fugit.</p>
+        <p>Lorem ipsum <i>dolor sit amet consectetur adipisicing elit. Itaque tempore recusandae ea natus</i> consequuntur nemo iste quasi dolores sapiente. Porro tempore aspernatur vel sit necessitatibus laudantium illum assumenda eaque magni?</p>
+
+    </div>
+
+    <form action="">
+        <label for="">Nome</label>
+        <input type="text">
+        <br><br>
+        <label for="">Passoword</label>
+        <input type="password">
+        <br><br>
+        <label for="">Confirmar password</label>
+        <input type="password">
+        <br><br>
+        <input type="submit">
+
+
+
+
+    </form>
+
+
+
+
+
+</body>
+</html>

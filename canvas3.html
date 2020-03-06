@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        canvas{
+            border: 1px solid black;
+            background-color: blanchedalmond;
+        }
+
+
+    </style>
+
+
+<body>
+
+    <canvas width="200" height="200" id="quadro">
+    <!-- <img src="assets/img/dog.png" style="width: 100%;" alt="">         -->
+    </canvas>
+
+        <script>
+            var cv = document.getElementById("quadro")
+
+            if(cv.getContext) {
+                var ctx = quadro.getContext("2d")
+                ctx.fillStyle = "rgba(0,149,120,0.7)"
+                //desenhando
+            ctx.beginPath();
+            /* o canvas não trabalha com ângulos em graus
+            somente em radianos. para transformar: Math.PI/180*angulo */
+            ctx.arc(100,100,40,Math.PI/180*45,Math.PI/180*315);
+            ctx.stroke();
+            //fazendo as linhas
+            ctx.lineTo(100,100)
+            ctx.lineTo(129,129)
+            ctx.fillStyle = "rgba(255,255,0)"
+            ctx.fill(); // preenchimento da forma - pacman
+            ctx.stroke();
+
+            }
+            else {
+                alert("Navegador não suporta o canvas!")
+            }
+
+
+
+        </script> 
+    
+</body>
+</html>
